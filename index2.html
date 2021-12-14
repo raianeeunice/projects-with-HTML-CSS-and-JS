@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles2.css">
+    <script>
+      const scrollWheel = event => {
+    if(event.deltaY < 0){
+        event.target.scrollBy(300, 0)
+      }
+      else{
+        event.target.scrollBy(-300, 0)
+      }
+  }
+
+  let count = 0
+setInterval(function(){
+  count += 400
+  if(count > 8000) count = 0
+  document.querySelector("#items").scrollTo(count, 0)
+  console.log('moveu')
+}, 1500)
+    </script>
+</head>
+<body>
+    <div id="items-wrapper">
+        <div id="items">
+          <div class="item"><img src="./files/2.jpeg"/></div>
+          <div class="item"><img src="./files/3.jpeg"/></div>
+          <div class="item"><img src="./files/8.jpeg"/></div>
+          <div class="item"><img src="./files/1.jpeg"/></div>
+          <div class="item"><img src="./files/7.jpeg"/></div>
+          <div class="item"><img src="./files/16.jpeg"/></div>
+          <div class="item"><img src="./files/9.jpeg"/></div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

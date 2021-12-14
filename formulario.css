@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#titulo{
+    color: rgb(22, 70, 160);
+    font-family: 'Sacramento', cursive;
+    margin-left: 7%;
+    font-size: 3em;
+}
+
+#subtitulo{
+    font-family:cursive;
+    color:rgb(1, 55, 156);
+    margin-left: 25%;
+}
+
+fieldset{
+    border: 0;
+}
+
+body{
+    background-image: url(./files/22.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 1.1em;
+    margin-left:27%;
+    margin-top: 5%;
+    justify-content: center;  
+    font-family: cursive;
+
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: rgb(61, 0, 160);
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"]{
+    padding: 0.2em;
+    border: 1px solid rgb(23, 61, 233);
+    box-shadow: 2px 2px 2px rgb(1, 39, 75);
+    display: block;
+}
+
+.campo input[type="email"]{
+    padding: 0.2em;
+    border: 1px solid rgb(23, 61, 233);
+    box-shadow: 2px 2px 2px rgb(1, 39, 75);
+    display: block;
+}
+
+.campo select{
+    padding: 0.2em;
+    border: 1px solid rgb(23, 61, 233);
+    box-shadow: 2px 2px 2px rgb(1, 39, 75);
+    display: block;
+}
+
+.campo textarea{
+    padding: 0.2em;
+    border: 1px solid rgb(23, 61, 233);
+    box-shadow: 2px 2px 2px rgb(1, 39, 75);
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus{
+    background: #E0E0F8;
+}
+
+.campo select:focus{
+    background: #E0E0F8;
+}
+
+.campo textarea:focus{
+    background: #E0E0F8;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: cornflowerblue;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffff;
+    padding: 0.2em, 0.6em;
+    box-shadow:rgb(16, 56, 70) 2px 2px 2px;
+    text-shadow: rgb(10, 37, 119) 1px 1px 1px;
+    position:static;
+    top: 90%;
+    left: 60%;
+    margin-right: 50%;
+    transform: translate(50%, 50%);
+    font-family:cursive;
+}
+
+.botao:hover{
+    background: rgb(37, 109, 143);
+    box-shadow: rgb(88, 104, 192) inset 2px 2px 2px;
+    text-shadow: none;
+    color: rgb(255, 255, 255);
+    font-family:cursive;
+    margin-bottom: 1em;
+    border: 0;
+    font-size: 1.2em;
+    
+
+}

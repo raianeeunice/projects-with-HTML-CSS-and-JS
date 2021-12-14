@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./formulario.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Avaliando a Cestas Mais Amor</h1>
+        <p id="subtitulo">Sua opinião é valiosa para nós</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label> 
+                <input type="text" name="Sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>O produto satisfez as suas expectativas?</strong></label>
+            <label>
+                <input type="radio" name="expectativa" value="perfeitamente" checked>Perfeitamente
+            </label>
+
+            <label>
+                <input type="radio" name="expectativa" value="maisoumenos">Mais ou menos
+            </label>
+
+            <label>
+                <input type="radio" name="expectativa" value="naosatisfez">Não Satisfez
+            </label>
+        </div>
+
+        <div class="campo">
+            <label><strong>O produto foi entregue no horário previsto?</strong></label>
+            <label>
+                <input type="radio" name="horario" value="sim" checked>Sim
+            </label>
+
+            <label>
+                <input type="radio" name="horario" value="maisoumenos">Mais ou menos
+            </label>
+
+            <label>
+                <input type="radio" name="horario" value="nao">Não
+            </label>
+        </div>
+
+        <div class="campo">
+            <label><strong>O atendimento foi respeitável e abrangente?</strong></label>
+            <label>
+                <input type="radio" name="atendimento" value="sim" checked>Sim
+            </label>
+
+            <label>
+                <input type="radio" name="atendimento" value="maisoumenos">Mais ou menos
+            </label>
+
+            <label>
+                <input type="radio" name="atendimento" value="nao">Não
+            </label>
+        </div>
+
+        <div class="campo">
+            <label><strong>Se sentiu à vontade para pedir detalhes?</strong></label>
+            <label>
+                <input type="radio" name="sentiu" value="sim" checked>Sim
+            </label>
+
+            <label>
+               <input type="radio" name="sentiu" value="maisoumenos">Mais ou menos
+            </label>
+
+            <label>
+                <input type="radio" name="sentiu" value="nao">Não
+            </label>
+        </div>
+
+        <div class="campo">
+            <label><strong>Os detalhes foram feitos como você pediu?</strong></label>
+            <label>
+                <input type="radio" name="pagamento" value="sim" checked>Sim
+            </label>
+
+            <label>
+                <input type="radio" name="pagamento" value="maisoumenos">Mais ou menos
+            </label>
+            
+            <label>
+                <input type="radio" name="pagamento" value="nao">Não
+            </label>        
+        </div>
+
+        <div class="campo">
+            <label><strong>O preço foi justo de acordo com o produto final?</strong></label>
+            <label>
+                <input type="radio" name="final" value="sim" checked>Sim
+            </label>
+
+            <label>
+                <input type="radio" name="final" value="maisoumenos">Mais ou menos
+            </label>
+
+            <label>
+                <input type="radio" name="final" value="nao">Não
+            </label>
+        </div>
+
+        <div class="campo">
+            <label><strong>Você recomendaria nossos serviços para os seus conhecidos?</strong></label>
+            <label>
+                <input type="radio" name="recomendaria" value="sim" checked>Sim
+            </label>
+
+            <label>
+                <input type="radio" name="recomendaria" value="maisoumenos">Mais ou menos
+            </label>
+
+            <label>
+                <input type="radio" name="recomendaria" value="nao">Não
+            </label>
+        </div>
+           
+
+        <div class="campo">
+            <label><strong>Qual a sua localidade:</strong></label>
+            <select name="Localidade" id="local">
+                <option value="" selected disabled>Selecione</option>
+                <option>Aracaju</option>
+                <option>Barra dos Coqueiros</option>
+                <option>Nossa Senhora do Socorro</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <div class="campo">
+                <br>
+                <label><strong>Na sua visão, o que podemos melhorar?</strong></label>
+                <textarea name="melhorias" id="melhorias" rows="6" style="width: 20em;"></textarea>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="botao">
+            Concluído
+        </button>
+
+
+    </form>
+
+</body>
+</html>
